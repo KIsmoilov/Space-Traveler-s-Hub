@@ -4,10 +4,11 @@
 }
 
 .mission-main-container:first-of-type {
-    border-top-left-radius: 0.2rem;
-    border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
 }
+
 .mission-main-container:last-of-type {
-    border-bottom-left-radius: 0.2rem;
-    border-bottom-right-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
 }

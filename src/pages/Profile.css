@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.mission-lists, .rockets-list {
-    margin-bottom: 0.5rem;
+.mission-lists,
+.rockets-list {
+  margin-bottom: 0.5rem;
 }
