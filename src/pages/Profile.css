@@ -1,0 +1,11 @@
+.profile-main-container {
+  padding: 0 4%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mission-lists,
+.rockets-list {
+  margin-bottom: 0.5rem;
+}
