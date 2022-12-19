@@ -43,3 +43,7 @@
 .menuNav li:nth-of-type(even) {
   border-right: 1px solid black;
 }
+
+.active {
+  border-bottom: 1px solid black;
+}
