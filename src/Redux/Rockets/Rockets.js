@@ -4,7 +4,7 @@ const CANCEL_RESERVATION = 'Rockets/Rockets/CANCEL_RESERVATION';
 
 const initialState = [];
 
-export default function reducer(state = initialState, action = {}) {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
     case GET_ALL_ROCKETS:
       return state;
