@@ -1,7 +1,9 @@
+// Action-Types
 const GET_ALL_ROCKETS = 'Rockets/Rockets/GET_ALL_ROCKETS';
 const RESERVE_ROCKET = 'Rockets/Rockets/RESERVE_ROCKET';
 const CANCEL_RESERVATION = 'Rockets/Rockets/CANCEL_RESERVATION';
 
+// Reducers
 const initialState = [];
 
 export default function reducer(state = initialState, action) {
@@ -16,3 +18,5 @@ export default function reducer(state = initialState, action) {
       return state;
   }
 }
+
+// Action-Creators
