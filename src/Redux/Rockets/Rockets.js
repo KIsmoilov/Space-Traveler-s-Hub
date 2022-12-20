@@ -1,3 +1,9 @@
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+
+// API
+const BASE_URL = 'https://api.spacexdata.com/v3/rockets';
+
 // Action-Types
 const GET_ALL_ROCKETS = 'Rockets/Rockets/GET_ALL_ROCKETS';
 const RESERVE_ROCKET = 'Rockets/Rockets/RESERVE_ROCKET';
@@ -20,3 +26,10 @@ export default function reducer(state = initialState, action) {
 }
 
 // Action-Creators
+
+const fetchRockets = createAsyncThunk(GET_ALL_ROCKETS, async () => {
+  const res = await axios.get(BASE_URL);
+  return res;
+});
+
+fetchRockets();
