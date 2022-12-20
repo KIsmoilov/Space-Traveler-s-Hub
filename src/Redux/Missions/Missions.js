@@ -9,7 +9,7 @@ import pick from '../utils';
 const BASE_URL = 'https://api.spacexdata.com/v3/missions';
 
 // Actions
-const DISPLAY_MISSIONS = 'Missions/Missions/DISPLAY_MISSIONS';
+const FETCH_MISSIONS = 'Missions/Missions/FETCH_MISSIONS';
 const JOIN_MISSION = 'Missions/Missions/JOIN_MISSION';
 const LEAVE_MISSION = 'Missions/Missions/LEAVE_MISSION';
 
@@ -18,7 +18,7 @@ const initialState = [];
 
 export default function missionReducer(state = initialState, action) {
   switch (action.type) {
-    case `${DISPLAY_MISSIONS}/fulfilled`:
+    case `${FETCH_MISSIONS}/fulfilled`:
       return [...action.payload];
     case JOIN_MISSION:
       return state;
@@ -30,7 +30,7 @@ export default function missionReducer(state = initialState, action) {
 }
 
 // Action Creators
-export const fetchMissions = createAsyncThunk(DISPLAY_MISSIONS, async () => {
+export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   const response = await axios.get(BASE_URL);
   const { data } = response;
   const missions = [];
