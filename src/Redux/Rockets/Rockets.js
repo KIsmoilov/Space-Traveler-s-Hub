@@ -27,9 +27,8 @@ export default function reducer(state = initialState, action) {
 
 // Action-Creators
 
-const fetchRockets = createAsyncThunk(GET_ALL_ROCKETS, async () => {
+export const fetchRockets = createAsyncThunk(GET_ALL_ROCKETS, async () => {
   const res = await axios.get(BASE_URL);
+  console.log(res);
   return res;
 });
-
-fetchRockets();
