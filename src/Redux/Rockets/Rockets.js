@@ -18,11 +18,7 @@ const initialState = [];
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case `${GET_ALL_ROCKETS}/fulfilled`:
-      console.log(action.payload);
-      return [
-        ...state,
-        action.payload,
-      ];
+      return action.payload;
     case RESERVE_ROCKET:
       return state;
     case CANCEL_RESERVATION:
@@ -42,6 +38,5 @@ export const fetchRockets = createAsyncThunk(GET_ALL_ROCKETS, async () => {
   data.forEach((object) => {
     rockets.push(pick(object, selectedData));
   });
-  console.log(rockets, 'refined');
   return rockets;
 });
