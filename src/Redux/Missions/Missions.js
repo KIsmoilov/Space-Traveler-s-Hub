@@ -19,7 +19,7 @@ const initialState = [];
 export default function missionReducer(state = initialState, action) {
   switch (action.type) {
     case `${DISPLAY_MISSIONS}/fulfilled`:
-      return [...state, ...action.payload];
+      return [...action.payload];
     case JOIN_MISSION:
       return state;
     case LEAVE_MISSION:
@@ -39,6 +39,5 @@ export const fetchMissions = createAsyncThunk(DISPLAY_MISSIONS, async () => {
   data.forEach((object) => {
     missions.push(pick(object, selectedData));
   });
-  console.log(missions);
   return missions;
 });

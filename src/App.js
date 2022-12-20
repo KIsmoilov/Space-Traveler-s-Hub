@@ -3,15 +3,13 @@ import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 // pages
 import Rockets from './pages/Rockets';
-// import Missions from './pages/Missions';
+import Missions from './pages/Missions';
 import Profile from './pages/Profile';
 import Navbar from './components/Navbar';
 import { fetchRockets } from './Redux/Rockets/Rockets';
 
 // Stylesheet
 import './App.css';
-
-const Missions = React.lazy(() => import('./pages/Missions'));
 
 function App() {
   const dispatch = useDispatch();

@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../Redux/Missions/Missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
+  const missions = useSelector((state) => state.Missions);
 
   useEffect(() => {
-    dispatch(fetchMissions());
+    if (missions.length === 0) {
+      dispatch(fetchMissions());
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
