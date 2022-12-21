@@ -5,12 +5,11 @@
 .rocket-details-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 4%;
+    gap: 3%;
 }
 
-.rocket-image-section {
-  border: solid 1px red;
-}
+/* .rocket-image-section {
+} */
 
 .rocket-image-section img{
   height: 7rem;
@@ -18,5 +17,30 @@
 }
 
 .rocket-detail-section {
-  border: solid 1px blue;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.rocket-name {
+  font-weight: normal;
+}
+
+.reservation-status {
+  background-color: #6984BA;
+  color: #fff;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.rocket-btn {
+  /* padding: 2rem; */
+  margin-top: 1rem;
+  background-color: blue;
+  color: #fff;
+  height: 2.2rem;
+  width: 8rem;
+  border: none;
+  border-radius: 0.4rem;
 }

@@ -20,10 +20,15 @@ const RocketDetails = () => {
           <h2 className="rocket-name">Title</h2>
           <div>
             <span className="reservation-status">Researved</span>
-            <span className="rocket-description" />
+            <span className="rocket-description">
+              HTML tables allow web developers to arrange
+              data into rows and columns. ... A table in
+              HTML consists of table cells inside rows
+              and columns.
+            </span>
           </div>
-          <div className="rocket-btn">
-            <button type="button">Reserve Rocket</button>
+          <div className="rocket-btn-div">
+            <button type="button" className="rocket-btn">Reserve Rocket</button>
           </div>
         </div>
       </div>
