@@ -1,6 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleReservation } from '../Redux/Rockets/Rockets';
 // Components
 import RocketDetails from '../components/RocketDetails';
 
@@ -8,9 +8,11 @@ import RocketDetails from '../components/RocketDetails';
 import '../components/RocketDetails.css';
 
 const Rockets = () => {
+  const dispatch = useDispatch();
   const rockets = useSelector((state) => state.Rockets);
-  const toggleReservation = (id) => {
+  const eventHandler = (id) => {
     console.log(id);
+    dispatch(toggleReservation(id));
   };
 
   return (
@@ -20,7 +22,7 @@ const Rockets = () => {
           <RocketDetails
             key={rocket.id}
             rocket={rocket}
-            toggleReservation={toggleReservation}
+            eventHandler={eventHandler}
           />
         ))}
       </div>
