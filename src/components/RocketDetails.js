@@ -26,7 +26,7 @@ const RocketDetails = ({ rocket, eventHandler }) => {
           <div className="rocket-btn-div">
             <button
               type="button"
-              className="rocket-btn"
+              className="rocket-btn-reserve"
               onClick={() => { eventHandler(id); }}
             >
               Reserve Rocket

@@ -37,14 +37,32 @@
   margin-right: 0.4rem;
 }
 
-.rocket-btn {
+.rocket-btn-reserve {
   background-color: rgb(0, 124, 250);
   color: #fff;
   height: 2.2rem;
   width: 8rem;
-  border: none;
+  border: 1px solid rgb(0, 124, 250);
   border-radius: 0.4rem;
   cursor: pointer;
+}
+
+.rocket-btn-cancel {
+  background-color: #fff;
+  color: #000;
+  height: 2.2rem;
+  width: 8.5rem;
+  border: 1px solid #000;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.rocket-btn-cancel:hover {
+  border: 1px solid red;
+}
+
+.rocket-btn-reserve:hover {
+  border: 1px solid lime;
 }
 
 @media screen and (max-width: 768px) {

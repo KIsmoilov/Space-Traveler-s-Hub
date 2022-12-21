@@ -11,7 +11,6 @@ const Rockets = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.Rockets);
   const eventHandler = (id) => {
-    console.log(id);
     dispatch(toggleReservation(id));
   };
 
