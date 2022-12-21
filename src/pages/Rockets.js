@@ -9,12 +9,11 @@ import '../components/RocketDetails.css';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.Rockets);
-
   console.log(rockets);
   return (
     <>
       <div className="rockets-main-section">
-        <RocketDetails />
+        {rockets.map((rocket) => <RocketDetails key={rocket.id} rocket={rocket} />)}
       </div>
     </>
   );

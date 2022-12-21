@@ -1,31 +1,25 @@
+/* eslint-disable camelcase */
 import React from 'react';
-import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 // Stylesheet
 import './RocketDetails.css';
-import rimg from '../assets/web3-hackathon-project-screenshot.png';
+// import rimg from '../assets/web3-hackathon-project-screenshot.png';
 
-const RocketDetails = () => {
-  const rockets = useSelector((state) => state.Rockets);
-
-  console.log(rockets);
+const RocketDetails = ({ rocket }) => {
+  const { rocket_name, flickr_images, description } = rocket;
 
   return (
     <>
       <div className="rocket-details-container">
         <div className="rocket-image-section">
-          <img src={rimg} alt="/" />
+          <img src={flickr_images[0]} alt={rocket_name} />
         </div>
         <div className="rocket-detail-section">
-          <h2 className="rocket-name">Title</h2>
+          <h2 className="rocket-name">{rocket_name}</h2>
           <div>
-            <span className="reservation-status">Researved</span>
-            <span className="rocket-description">
-              HTML tables allow web developers to arrange
-              data into rows and columns. ... A table in
-              HTML consists of table cells inside rows
-              and columns.
-            </span>
+            <span className="reservation-status">Reserved</span>
+            <span className="rocket-description">{description}</span>
           </div>
           <div className="rocket-btn-div">
             <button type="button" className="rocket-btn">Reserve Rocket</button>
@@ -34,6 +28,10 @@ const RocketDetails = () => {
       </div>
     </>
   );
+};
+
+RocketDetails.propTypes = {
+  rocket: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default RocketDetails;
