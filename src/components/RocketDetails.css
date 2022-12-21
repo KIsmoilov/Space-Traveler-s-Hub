@@ -1,0 +1,22 @@
+.rockets-main-section {
+    padding: 0 4%;
+}
+
+.rocket-details-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 4%;
+}
+
+.rocket-image-section {
+  border: solid 1px red;
+}
+
+.rocket-image-section img{
+  height: 7rem;
+  aspect-ratio: 16 / 9;
+}
+
+.rocket-detail-section {
+  border: solid 1px blue;
+}
