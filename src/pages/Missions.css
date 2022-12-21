@@ -1,0 +1,50 @@
+.listContainer {
+  margin: 3rem;
+}
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+}
+
+.gridTitle {
+  min-width: 8rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-top: 1px solid rgb(222, 226, 230);
+  border-right: 1px solid rgb(222, 226, 230);
+  border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+.gridTitle:first-of-type {
+  border-left: 1px solid rgb(222, 226, 230);
+}
+
+.gridTitle:last-child {
+  color: white;
+  font-size: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .gridHeader {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+
+  .gridTitle:nth-child(n+1) {
+    display: none;
+  }
+
+  .gridTitle:last-child {
+    border: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
