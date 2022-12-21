@@ -9,7 +9,7 @@ import '../components/RocketDetails.css';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.Rockets);
-  console.log(rockets);
+
   return (
     <>
       <div className="rockets-main-section">

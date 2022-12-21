@@ -32,7 +32,6 @@ export default function reducer(state = initialState, action) {
 export const fetchRockets = createAsyncThunk(GET_ALL_ROCKETS, async () => {
   const res = await axios.get(BASE_URL);
   const { data } = res;
-  // console.log(data);
   const rockets = [];
   const selectedData = ['id', 'rocket_name', 'rocket_type', 'flickr_images', 'description'];
 
