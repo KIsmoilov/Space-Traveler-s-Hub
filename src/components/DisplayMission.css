@@ -1,0 +1,106 @@
+.missionList {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+}
+
+.grid-item {
+  min-width: 8rem;
+  display: flex;
+  padding: 0.5rem;
+  border-right: 1px solid rgb(222, 226, 230);
+  border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+.grid-item:first-child {
+  border-left: 1px solid rgb(222, 226, 230);
+}
+
+.missionName {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.missionList:nth-of-type(even) {
+  background-color: rgb(242, 242, 242);
+}
+
+.missionDescription {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.active-btn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 162, 183);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.join-btn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-self: center;
+  color: rgb(51, 58, 64);
+  background: none;
+  border: 1px solid rgb(51, 58, 64);
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .active-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .join-btn {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .missionList {
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    border-left: 1px solid rgb(222, 226, 230);
+  }
+
+  .missionName {
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  .grid-item:first-child {
+    background-color: rgb(242, 242, 242);
+  }
+
+  .missionList:nth-of-type(even) {
+    background-color: white;
+  }
+
+  .active-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .join-btn {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
