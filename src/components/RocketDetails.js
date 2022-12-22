@@ -20,7 +20,9 @@ const RocketDetails = ({ rocket, eventHandler }) => {
         <div className="rocket-detail-section">
           <h2 className="rocket-name">{rocket_name}</h2>
           <div>
-            <span className="reservation-status">Reserved</span>
+            {reserved && (
+              <span className="reservation-status">Reserved</span>
+            )}
             <span className="rocket-description">{description}</span>
           </div>
           <div className="rocket-btn-div">
