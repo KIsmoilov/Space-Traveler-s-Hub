@@ -1,11 +1,9 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { useDispatch } from 'react-redux';
 import './DisplayMission.css';
 
-export default function DisplayMission({ mission }) {
-  const dispatch = useDispatch();
+export default function DisplayMission({ mission, eventHandler }) {
   const { mission_id, mission_name, description } = mission;
 
   return (
@@ -24,7 +22,7 @@ export default function DisplayMission({ mission }) {
           type="button"
           className="join-btn"
           onClick={() => {
-            dispatch((mission_id));
+            eventHandler(mission_id);
           }}
         >
           Join Mission
@@ -36,4 +34,5 @@ export default function DisplayMission({ mission }) {
 
 DisplayMission.propTypes = {
   mission: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  eventHandler: PropTypes.func.isRequired,
 };
