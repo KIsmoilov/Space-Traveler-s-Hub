@@ -20,7 +20,7 @@
   align-self: center;
   font-style: italic;
   font-size: 1.2rem;
-  color: #F68D36;
+  color: #f68d36;
   animation: rightToLeft 4.5s linear infinite;
 }
 
@@ -28,6 +28,7 @@
   0% {
     transform: translateX(300px);
   }
+
   100% {
     transform: translateX(-300px);
   }
