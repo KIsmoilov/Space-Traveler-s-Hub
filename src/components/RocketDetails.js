@@ -8,7 +8,7 @@ import './RocketDetails.css';
 
 const RocketDetails = ({ rocket, eventHandler }) => {
   const {
-    id, rocket_name, flickr_images, description,
+    id, rocket_name, flickr_images, description, reserved,
   } = rocket;
 
   return (
@@ -20,16 +20,18 @@ const RocketDetails = ({ rocket, eventHandler }) => {
         <div className="rocket-detail-section">
           <h2 className="rocket-name">{rocket_name}</h2>
           <div>
-            <span className="reservation-status">Reserved</span>
+            {reserved && (
+              <span className="reservation-status">Reserved</span>
+            )}
             <span className="rocket-description">{description}</span>
           </div>
           <div className="rocket-btn-div">
             <button
               type="button"
-              className="rocket-btn-reserve"
+              className={reserved ? 'rocket-btn-cancel' : 'rocket-btn-reserve'}
               onClick={() => { eventHandler(id); }}
             >
-              Reserve Rocket
+              {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
             </button>
           </div>
         </div>
