@@ -4,7 +4,7 @@
 }
 
 .grid-item {
-  min-width: 8rem;
+  min-width: 8.5rem;
   display: flex;
   padding: 0.5rem;
   border-right: 1px solid rgb(222, 226, 230);
@@ -58,6 +58,14 @@
   cursor: pointer;
 }
 
+.join-btn:hover {
+  font-size: 1.1rem;
+}
+
+.join-btn:active {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 1024px) {
   .active-btn {
     padding: 0.2rem 0.4rem;
@@ -66,6 +74,14 @@
 
   .join-btn {
     padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .join-btn:hover {
+    font-size: 1rem;
+  }
+
+  .join-btn:active {
     font-size: 0.9rem;
   }
 }
@@ -102,6 +118,14 @@
 
   .join-btn {
     padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .join-btn:hover {
+    font-size: 1rem;
+  }
+
+  .join-btn:active {
     font-size: 0.9rem;
   }
 }
