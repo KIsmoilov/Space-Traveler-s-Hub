@@ -15,13 +15,17 @@ export default function DisplayMission({ mission, eventHandler }) {
         <p className="missionDescription">{description}</p>
       </div>
       <div className="grid-item">
-        <button type="button" className="active-btn">Active Member</button>
+        { mission.joined ? (
+          <button type="button" className="active-btn">Active Member</button>
+        ) : (
+          <button type="button" className="notMember-btn">NOT A MEMBER</button>
+        )}
       </div>
       <div className="grid-item">
-        { mission.reserved ? (
+        { mission.joined ? (
           <button
             type="button"
-            className="join-btn"
+            className="leave-btn"
             onClick={() => {
               eventHandler(mission_id);
             }}

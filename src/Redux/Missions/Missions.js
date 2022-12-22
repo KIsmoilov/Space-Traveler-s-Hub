@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Utils
-import pick from '../utils';
+import pick, { addJoined } from '../utils';
 
 // API
 
@@ -25,7 +25,7 @@ export default function missionReducer(state = initialState, action) {
         if (missions.mission_id === action.mission_id) {
           return {
             ...missions,
-            reserved: !missions.reserved,
+            joined: !missions.joined,
           };
         }
         return missions;
@@ -36,11 +36,6 @@ export default function missionReducer(state = initialState, action) {
 }
 
 // Action Creators
-const addJoined = (array) => {
-  const missions = array.map((obj) => ({ ...obj, reserved: false }));
-  return missions;
-};
-
 export const fetchMissions = createAsyncThunk(FETCH_MISSIONS, async () => {
   const response = await axios.get(BASE_URL);
   const { data } = response;

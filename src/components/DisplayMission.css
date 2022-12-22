@@ -4,7 +4,7 @@
 }
 
 .grid-item {
-  min-width: 8.5rem;
+  min-width: 9rem;
   display: flex;
   padding: 0.5rem;
   border-right: 1px solid rgb(222, 226, 230);
@@ -30,7 +30,8 @@
   line-height: 1.4rem;
 }
 
-.active-btn {
+.active-btn,
+.notMember-btn {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -44,7 +45,13 @@
   font-size: 0.9rem;
 }
 
-.join-btn {
+.notMember-btn {
+  background-color: rgb(108, 117, 125);
+  font-size: 0.8rem;
+}
+
+.join-btn,
+.leave-btn {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -54,34 +61,45 @@
   border: 1px solid rgb(51, 58, 64);
   border-radius: 0.2rem;
   padding: 0.5rem 0.6rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
-.join-btn:hover {
-  font-size: 1.1rem;
+.leave-btn {
+  color: rgb(230, 54, 73);
+  border: 1px solid rgb(230, 54, 73);
 }
 
-.join-btn:active {
+.join-btn:hover,
+.leave-btn:hover {
+  font-size: 1rem;
+}
+
+.join-btn:active,
+.leave-btn:active {
   font-size: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .active-btn {
+  .active-btn,
+  .notMember-btn {
     padding: 0.2rem 0.4rem;
     font-size: 0.8rem;
   }
 
-  .join-btn {
+  .join-btn,
+  .leave-btn {
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
   }
 
-  .join-btn:hover {
+  .join-btn:hover,
+  .leave-btn:hover {
     font-size: 1rem;
   }
 
-  .join-btn:active {
+  .join-btn:active,
+  .leave-btn:active {
     font-size: 0.9rem;
   }
 }
@@ -111,21 +129,25 @@
     background-color: white;
   }
 
-  .active-btn {
+  .active-btn,
+  .notMember-btn {
     padding: 0.2rem 0.4rem;
     font-size: 0.8rem;
   }
 
-  .join-btn {
+  .join-btn,
+  .leave-btn {
     padding: 0.4rem 0.5rem;
     font-size: 0.9rem;
   }
 
-  .join-btn:hover {
+  .join-btn:hover,
+  .leave-btn:hover {
     font-size: 1rem;
   }
 
-  .join-btn:active {
+  .join-btn:active,
+  .leave-btn:hover {
     font-size: 0.9rem;
   }
 }

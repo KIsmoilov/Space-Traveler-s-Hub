@@ -7,3 +7,8 @@ export const addReserved = (arr) => {
   const rockets = arr.map((obj) => ({ ...obj, reserved: false }));
   return rockets;
 };
+
+export const addJoined = (array) => {
+  const missions = array.map((obj) => ({ ...obj, joined: false }));
+  return missions;
+};
