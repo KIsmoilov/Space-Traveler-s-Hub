@@ -31,7 +31,7 @@ const Missions = () => {
       </div>
       {missions.map((mission) => (
         <DisplayMission
-          key={mission.id}
+          key={mission.mission_id}
           mission={mission}
           eventHandler={eventHandler}
         />
