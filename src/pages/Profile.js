@@ -20,12 +20,16 @@ const Profile = () => {
         </div>
         <div className="profile-rockets-section">
           <h3 className="rockets-list">My Rockets</h3>
-          {reservedRockets.map((rocket) => (
-            <RocketLists
-              key={rocket.id}
-              rocket={rocket}
-            />
-          ))}
+          {reservedRockets.length ? (
+            reservedRockets.map((rocket) => (
+              <RocketLists
+                key={rocket.id}
+                rocket={rocket}
+              />
+            ))
+          ) : (
+            <span className="no-reserved">No Reserved Rocket!!!</span>
+          )}
         </div>
       </div>
     </>

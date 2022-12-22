@@ -9,3 +9,26 @@
 .rockets-list {
   margin-bottom: 0.5rem;
 }
+
+.profile-rockets-section {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.no-reserved {
+  align-self: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #F68D36;
+  animation: rightToLeft 4.5s linear infinite;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
