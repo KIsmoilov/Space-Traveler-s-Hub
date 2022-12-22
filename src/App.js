@@ -1,28 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+// pages
+import Rockets from './pages/Rockets';
+import Missions from './pages/Missions';
+import Profile from './pages/Profile';
+import Navbar from './components/Navbar';
+import { fetchRockets } from './Redux/Rockets/Rockets';
+
+// Stylesheet
 import './App.css';
 
 function App() {
+  const dispatch = useDispatch();
+  dispatch(fetchRockets()).unwrap();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </>
   );
 }
 

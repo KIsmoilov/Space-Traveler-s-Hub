@@ -1,70 +1,228 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+# SPACE TRAVELER'S HUB
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 📗 Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Space Traveler's Hub ](#-food-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Project Details](#-project-details)
+  - [🚀 Pull Requests](#-pull-requests)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
-### `npm test`
+<!-- PROJECT DESCRIPTION -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 📖 Space-Traveler-s-Hub
+ <a name="about-project"></a>
 
-### `npm run build`
+This is a React WebApp with the real live data from the SpaceX API.  The application will allow users to book rockets and join selected space missions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Built With <a name="built-with"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tech Stack <a name="tech-stack"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTML
 
-### `npm run eject`
+- CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Javascript
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React JS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 
-## Learn More
+- ESlint (is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- Features -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Key Features <a name="key-features"></a>
 
-### Code Splitting
+- **The users are able to make reservations on rockets and also join missions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- LIVE DEMO -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Live Demo <a name="live-demo"></a>
 
-### Making a Progressive Web App
+Please use the following link to access the website:
+- [Live Demo Link](https://space-travelers-hub-astn.onrender.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+- Have a local version control like Git. Which is a open source distributed version control system designed for source code management
+- A text editor (e.g Visual Studio Code, Vim, Atom & Sublime.)
+- A web browser (e.g Chrome, Safari, Mozilla Firefox.)
+- Live Server which is a web extension that helps you to live reload feature for dynamic content (PHP, Node.js, ASPNET)
+- Download waves to check project accessibilty
+
+### Setup
+
+1. Clone the repo by running the command
+   ```sh
+    git clone https://github.com/KIsmoilov/Space-Traveler-s-Hub
+.git
+   ```
+
+### Install
+
+Install this project with:
+
+2. Open the directory of the project
+   ```sh
+   cd Space-Traveler-s-Hub
+
+   ```
+3. Open the directory of the src
+   ```sh
+   cd src
+   ```
+4. Open the index.html file
+   ```sh
+   Click and open the index.html file
+   ```
+
+### Usage
+
+To run the project, execute the following command:
+
+5. Please run the following to render on the browser
+   ```sh
+   npm start
+   ```
+
+### Run tests
+
+To run tests, run the following command:
+
+6. Please run the following to test
+   ```sh
+   npm run test
+   ```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project using:
 
-### `npm run build` fails to minify
+7. Please run the following to deploy
+   ```sh
+   npm run deploy
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 Khusniddin Ismoilov
+
+- GitHub: [@KIsmoilov](https://github.com/KIsmoilov)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/khusniddin-ismoilov-185575157/)
+
+👤 Valentine Blaze
+
+- GitHub: [@V-blaze](https://github.com/V-Blaze)
+- Twitter: [@blaze_valentine](https://twitter.com/blaze_valentine)
+- LinkedIn: [@valentine-blaze](https://www.linkedin.com/in/valentine-blaze/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Enhance the My Profile section by adding a placeholder message when the "My Missions" or "My Rockets" lists are empty (no missions joined or no rockets reserved).
+- Enhance the My Profile section by adding the "Cancel reservation" and "Leave Mission" buttons to the lists here. Clicking them should dispatch the actions you have already used in the main Rockets and Missions sections.
+- Enhance the My Profile section by adding the "Read more" button for each mission and rocket. Upon click, it should open a corresponding Wikipedia page in a new tab. NOTE - you need to get that extra Wikipedia URL from the API's payload.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+- Contributions, issues, and feature requests are welcome!
+
+- Feel free to check the [issues page](https://github.com/KIsmoilov/Space-Traveler-s-Hub/issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+- Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- Microverse for providing the Design and guideline for this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+- **How can I find the node modules folder?**
+
+  - The node modules folder was added to the gitignore file, so you need to install it manually
+  
+  Please run the following to install node modules
+   ```sh
+   npm install
+   ```
+
+
+- **Which index.html file should I open to make some changes in src folder or dist folder?**
+
+  - Please make change only to Html, CSS and JS files in the src directory
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

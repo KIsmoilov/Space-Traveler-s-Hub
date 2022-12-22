@@ -1,0 +1,18 @@
+.mission-main-container {
+  padding: 0.5rem;
+  border: solid 1px #000;
+}
+
+.mission-main-container:first-of-type {
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+
+.mission-main-container:last-of-type {
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.mission-main-container:not(:first-of-type) {
+  border-top: none;
+}
