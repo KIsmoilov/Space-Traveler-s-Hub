@@ -3,6 +3,10 @@
   border: solid 1px #000;
 }
 
+.rocket-main-container:not(:first-of-type) {
+  border-top: none;
+}
+
 .rocket-main-container:first-of-type {
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;

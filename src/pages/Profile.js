@@ -11,7 +11,6 @@ const Profile = () => {
   const rockets = useSelector((state) => state.Rockets);
   const reservedRockets = rockets.filter((item) => item.reserved === true);
 
-  console.log(reservedRockets);
   return (
     <>
       <div className="profile-main-container">
@@ -21,7 +20,12 @@ const Profile = () => {
         </div>
         <div className="profile-rockets-section">
           <h3 className="rockets-list">My Rockets</h3>
-          <RocketLists />
+          {reservedRockets.map((rocket) => (
+            <RocketLists
+              key={rocket.id}
+              rocket={rocket}
+            />
+          ))}
         </div>
       </div>
     </>
