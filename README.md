@@ -70,7 +70,7 @@ This is a React WebApp with the real live data from the SpaceX API.  The applica
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 Please use the following link to access the website:
-- [Live Demo Link](#)
+- [Live Demo Link](https://space-travelers-hub-astn.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,8 +177,7 @@ You can deploy this project using:
 
 - Contributions, issues, and feature requests are welcome!
 
-- Feel free to check the [issues page](https://github.com/KIsmoilov/Space-Traveler-s-Hub
-/issues).
+- Feel free to check the [issues page](https://github.com/KIsmoilov/Space-Traveler-s-Hub/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

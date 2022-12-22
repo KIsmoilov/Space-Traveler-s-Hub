@@ -18,6 +18,7 @@
 
 .pageLogo {
   display: flex;
+  align-items: center;
   margin-left: 2rem;
 }
 
@@ -46,4 +47,37 @@
 
 .active {
   border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar h1 {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .pageLogo {
+    margin-left: 0;
+  }
+
+  .navList a {
+    font-size: 0.8rem;
+  }
+
+  .menuNav {
+    flex-direction: column;
+  }
+
+  .menuNav li:nth-of-type(even) {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navBar h1 {
+    font-size: 0.8rem;
+  }
+
+  .navList a {
+    font-size: 0.7rem;
+  }
 }
