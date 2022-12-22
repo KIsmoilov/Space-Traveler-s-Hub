@@ -20,15 +20,16 @@ export default function missionReducer(state = initialState, action) {
   switch (action.type) {
     case `${FETCH_MISSIONS}/fulfilled`:
       return [...action.payload];
-    case `${TOGGLE_JOIN_MISSION}/fulfilled`:
-      return {
-        ...state,
-        missions: [
-          ...state.missions,
-          {
-            joined: true,
-          }],
-      };
+    case TOGGLE_JOIN_MISSION:
+      return (state.map((missions) => {
+        if (missions.mission_id === action.mission_id) {
+          return {
+            ...missions,
+            reserved: !missions.reserved,
+          };
+        }
+        return missions;
+      }));
     default:
       return state;
   }
@@ -36,7 +37,7 @@ export default function missionReducer(state = initialState, action) {
 
 // Action Creators
 const addJoined = (array) => {
-  const missions = array.map((obj) => ({ ...obj, joined: false }));
+  const missions = array.map((obj) => ({ ...obj, reserved: false }));
   return missions;
 };
 

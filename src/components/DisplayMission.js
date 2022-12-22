@@ -18,15 +18,27 @@ export default function DisplayMission({ mission, eventHandler }) {
         <button type="button" className="active-btn">Active Member</button>
       </div>
       <div className="grid-item">
-        <button
-          type="button"
-          className="join-btn"
-          onClick={() => {
-            eventHandler(mission_id);
-          }}
-        >
-          Join Mission
-        </button>
+        { mission.reserved ? (
+          <button
+            type="button"
+            className="join-btn"
+            onClick={() => {
+              eventHandler(mission_id);
+            }}
+          >
+            Leave Mission
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="join-btn"
+            onClick={() => {
+              eventHandler(mission_id);
+            }}
+          >
+            Join Mission
+          </button>
+        )}
       </div>
     </div>
   );
