@@ -10,7 +10,8 @@
   margin-bottom: 0.5rem;
 }
 
-.profile-rockets-section {
+.profile-rockets-section,
+.profile-missions-section {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
