@@ -6,8 +6,10 @@ import PropTypes from 'prop-types';
 import './RocketDetails.css';
 // import rimg from '../assets/web3-hackathon-project-screenshot.png';
 
-const RocketDetails = ({ rocket }) => {
-  const { rocket_name, flickr_images, description } = rocket;
+const RocketDetails = ({ rocket, eventHandler }) => {
+  const {
+    id, rocket_name, flickr_images, description,
+  } = rocket;
 
   return (
     <>
@@ -22,7 +24,13 @@ const RocketDetails = ({ rocket }) => {
             <span className="rocket-description">{description}</span>
           </div>
           <div className="rocket-btn-div">
-            <button type="button" className="rocket-btn">Reserve Rocket</button>
+            <button
+              type="button"
+              className="rocket-btn-reserve"
+              onClick={() => { eventHandler(id); }}
+            >
+              Reserve Rocket
+            </button>
           </div>
         </div>
       </div>
@@ -32,6 +40,7 @@ const RocketDetails = ({ rocket }) => {
 
 RocketDetails.propTypes = {
   rocket: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  eventHandler: PropTypes.func.isRequired,
 };
 
 export default RocketDetails;
